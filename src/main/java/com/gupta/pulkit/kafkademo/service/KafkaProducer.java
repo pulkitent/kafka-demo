@@ -17,6 +17,7 @@ public class KafkaProducer {
 
     public void produceUserDetails(User user) {
         LOGGER.info("Producing user details -> " + user);
+
         String userString = user.toString();
         kafkaTemplate.send(TOPIC, userString);
     }

@@ -1,6 +1,5 @@
 package com.gupta.pulkit.kafkademo.service;
 
-import com.gupta.pulkit.kafkademo.models.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaListener;

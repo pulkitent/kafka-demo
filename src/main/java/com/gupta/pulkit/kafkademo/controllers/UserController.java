@@ -21,6 +21,7 @@ public class UserController {
     @PostMapping
     public void sendUserDetailsToKafkaUserTopic(@RequestBody() User user) {
         LOGGER.info("User details received " + user);
+
         kafkaProducer.produceUserDetails(user);
     }
 }
